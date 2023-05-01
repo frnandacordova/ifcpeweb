@@ -90,7 +90,13 @@ body {
     text-align: center
 
 }
+nav {
+    overflow: hidden;
+}
 
+main {
+    overflow: hidden;
+}
 p {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 12pt;
@@ -404,6 +410,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     min-height: 80vh;
+    overflow: hidden;
     
 
     padding: 0;
