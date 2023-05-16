@@ -1,0 +1,425 @@
+@media  (max-width: 480px) {
+    
+
+    .container-nav {
+        position: relative;
+        padding: 10px 12px;
+        height: auto;
+        
+        position: relative;
+    }
+    
+    .checkbox, .icons {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        width: 24px;
+        height: 50px;
+        color: white;
+        cursor: pointer;
+        margin-right: 1rem;
+        
+}
+
+    .icons {
+    
+        pointer-events: none;
+        font-size: 40px;
+        position: absolute;
+}
+
+    .checkbox {
+        display: block;
+        opacity: 0;
+}
+    .bi-list {
+        display: block;
+    }
+    .bi-x-lg {
+    display: none;
+    color: white;
+}
+
+    .checkbox:checked ~ .bi-list {
+        display: none;
+}
+
+    .checkbox:checked ~ .bi-x-lg {
+        display: block;
+}
+
+    .menu-nav {
+        width: 200px;
+        position: absolute;
+        margin-top: 48px;
+        right: 0px;
+       /* display: none;*/
+        transition: 250ms;
+}
+    .menu-nav {
+        display: none;
+        padding: 10px 12px;
+    }
+    .menu-nav, menu-item, a:hover {
+        text-decoration-line: underline;
+
+}
+
+    .checkbox:checked ~ .menu-nav {
+        display: block;
+        
+    }
+
+    h3 {
+        color: white;
+        font-size: 30pt;
+        font-weight: 600;
+        font-family: 'Source Serif Pro', serif;
+        line-height: 95%;
+    }
+    .featuresindex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+
+    }
+    .fi-left {
+        min-height: 35vh;
+    
+    }
+
+    .fi-middleleft {
+        min-height: 35vh;
+    }
+    .fi-middleright {
+        min-height: 35vh;
+    }
+    .fi-right {
+        min-height: 35vh;
+    }
+    
+    .cards-testimonios { 
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .container-nav {
+        padding-left: 1rem;
+        padding-bottom: 0%;
+        padding-right: 1rem;
+    }
+
+    .menu-nav {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        flex-direction: column;
+    }
+
+    .h1index {
+        color: white;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 42pt;
+        font-weight: 600;
+        line-height: 95%;
+        text-align: center;
+        margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 0rem;
+    }
+
+    .parrafo-hero {
+        color: white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        text-align: center;
+    }    
+
+    .parrafo-subheader {
+        color: white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        text-align: center
+    }
+
+    .parrafo-subheader__pages {
+        color: white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        text-align: left;
+    }
+
+    .h2-index {
+        font-size: 42pt;
+    }
+
+    .h2-oferta {
+        color: white;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 42pt;
+        font-weight: 600;
+        line-height: 95%;
+        text-align: left;
+        margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 0rem;
+    }
+
+    .h2-oferta__azul {
+        color: #1A1B38;
+        padding-left: 0;
+
+    }
+
+    .planestudios {
+        padding: 1rem;
+    }
+
+    .features {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);grid-template-rows: repeat(3, 1fr);grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+    }
+
+    .features-bigtext__1 {
+         grid-area: 1 / 1 / 2 / 2;
+    
+         }
+        
+
+    .features-img__2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        
+    }
+
+    .features-bigtext__3 { 
+        grid-area: 2 / 2 / 3 / 3;
+        /*grid-area: 2 / 1 / 3 / 2;*/
+     }
+
+    .features-img__4 {
+         grid-area: 2 / 1 / 3 / 2;
+         /*grid-area: 2 / 2 / 3 / 3;*/
+        }
+
+    .features-bigtext__5 {
+         grid-area: 3 / 1 / 4 / 2; 
+        }
+
+    .features-img__6 { 
+        grid-area: 3 / 2 / 4 / 3; }
+
+
+    .features-bigtext {
+        display: flex;
+        flex-direction: column;
+        background-color: #1A1B38;
+
+        min-height: 281px;
+        min-width: 195px;
+
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+
+        justify-content: end;
+        text-align: left;
+    
+        /*grid-area: bigtext;*/
+
+    }
+
+    .features-img {
+        display: flex;
+        flex-direction: column;
+        min-height: 281px;
+        min-width: 195px;
+
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        justify-content: end;
+
+        background-image: url(../img/card1.jpg);
+        background-size: cover;
+        background-position: center;
+
+        
+
+        /*grid-area: img;*/
+
+    }
+
+    /*CARDS*/
+
+    .features-img__semestres--1ro {
+        background-image: url(../img/card1.jpg);
+    
+    }
+    
+    .features-img__semestres--2do {
+        background-image: url(../img/card2.jpg);
+    }
+    
+    .features-img__semestres--3ro {
+        background-image: url(../img/card3.jpg);
+    }
+    
+    .features-img__semestres--4to {
+        background-image: url(../img/card4.jpg);
+    }
+    
+    .features-img__semestres--5to {
+        background-image: url(../img/portadaindex.jpg);
+    }
+    
+    .features-img__semestres--6to {
+        background-image: url(../img/portadaOferta.jpg);
+    }
+
+    .h2-features {
+        font-size: 42pt;
+        text-align: center;
+    }
+
+    .features__titulo--img {
+        font-size: 20pt;
+        font-weight: 700;
+        padding: 11px;
+        margin: 0;
+    }
+
+    .p-features {
+        font-size: 12pt;
+    }
+
+
+    /*OFERTA EDUCATIVA*/
+
+
+    .nav-categories {
+        display: flex;
+        padding-top: 1rem;
+        overflow: auto;
+    }
+
+    .nav-categories::-webkit-scrollbar {
+        width: 0;
+    }
+    .navcat-lic {
+
+        min-width: auto;
+        min-height: 20px;
+        
+    }
+
+
+    .navcat-lic-link {
+    
+        max-height: 44px;
+        min-width: 220px;
+        padding-right: 2rem;
+    }
+
+    .navcat-lic .navcat-lic-link {
+        font-size: 12pt;
+        text-decoration: none;
+    }
+
+    .search-form {
+        max-height: 44px;
+        min-width: 250px;
+        padding-right: 1rem;
+    }
+
+    .search-navbar {
+        display: flex;
+        padding-top: 0;
+        overflow: auto;
+        min-height: 44px;
+        
+        align-items: center;
+        justify-items: center;
+    }
+
+    .search-navbar::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .navplandeestudios {
+        min-width: 300px;
+        margin-top: 0;
+
+    }
+
+
+    .doscolumnas {
+        display: flex;
+        flex-direction: colum
+    }
+
+    .call-to-action {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-evenly;
+        max-height: 100vh;
+        min-height: 100vh;
+        max-width: 480; 
+        padding: 1rem;
+
+    }
+
+    .cta-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        
+        width: 480px;
+        justify-content: center;
+    }
+
+    .cta-text__blanco {
+    display: flex;
+    color: white;
+    padding: 1rem;
+}
+
+
+    .h2-oferta__azul {
+        color: #1A1B38;
+        padding-left: 0;
+        padding: 1rem;
+        }
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        min-height: 950px;
+    }
+
+    .team-text {
+        padding: 1rem;
+    }
+    footer {
+        background-color: #F6F6F6;
+        padding: 1rem;
+        max-height: 100vh;
+    }
+}

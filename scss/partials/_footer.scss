@@ -1,0 +1,28 @@
+footer {
+    background-color: #F6F6F6;
+    padding: 1rem;
+    max-height: 100vh;
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+.text-footer {
+    color: #1A1B38;
+    text-decoration: none;
+    font-weight: 400;
+
+}
+
+.menu-item-footer {
+    padding: 5px;
+}
+
