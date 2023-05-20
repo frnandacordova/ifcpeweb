@@ -1,5 +1,18 @@
 @media  (max-width: 480px) {
     
+    .h1paginas {
+        color: white;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 42pt;
+        font-weight: 600;
+        line-height: 95%;
+        text-align: left;
+        margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 0rem;
+
+    }
 
     .container-nav {
         position: relative;
@@ -181,14 +194,20 @@
     }
 
     .planestudios {
+        display: flex;
+        flex-direction: column;
         padding: 1rem;
+        
     }
 
     .features {
 
         display: grid;
-        grid-template-columns: repeat(2, 1fr);grid-template-rows: repeat(3, 1fr);grid-column-gap: 0px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
         grid-row-gap: 0px;
+        
 
     }
 
@@ -368,7 +387,7 @@
 
     .doscolumnas {
         display: flex;
-        flex-direction: colum
+        flex-direction: column;
     }
 
     .call-to-action {
@@ -405,7 +424,7 @@
     .h2-oferta__azul {
         color: #1A1B38;
         padding-left: 0;
-        padding: 1rem;
+        padding: 0rem;
         }
 
     .team {
@@ -420,6 +439,6 @@
     footer {
         background-color: #F6F6F6;
         padding: 1rem;
-        max-height: 100vh;
+        
     }
 }

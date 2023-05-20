@@ -87,6 +87,18 @@ p {
   font-weight: 300;
 }
 
+.h1paginas {
+  color: white;
+  text-align: left;
+  padding-left: 10%;
+  font-family: "Source Serif Pro", serif;
+  font-size: 56pt;
+  font-weight: 600;
+  line-height: 95%;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
 h2 {
   font-family: "Source Serif Pro", serif;
   font-size: 56pt;
@@ -231,6 +243,16 @@ h5 {
   background-color: rgba(26, 27, 56, 0.9);
 }
 
+.texto-imagen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-area: "cta-img" "cta-text";
+  justify-content: space-evenly;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
 .h2-index {
   color: white;
 }
@@ -257,8 +279,7 @@ h5 {
   justify-content: space-evenly;
   background-color: #50ffdf;
 }
-
-.fi-left {
+.featuresindex .fi-left {
   display: flex;
   flex-direction: column;
   background-image: url(../img/card1.jpg);
@@ -266,12 +287,11 @@ h5 {
   background-position: center;
   padding: 20px;
   padding-bottom: 40px;
-  min-height: 80vh;
+  min-height: 35vh;
   justify-content: end;
   align-items: start;
 }
-
-.fi-middleleft {
+.featuresindex .fi-middleleft {
   display: flex;
   flex-direction: column;
   background-image: url(../img/card2.jpg);
@@ -279,12 +299,11 @@ h5 {
   background-position: center;
   padding: 20px;
   padding-bottom: 40px;
-  min-height: 90vh;
+  min-height: 35vh;
   justify-content: end;
   align-items: start;
 }
-
-.fi-middleright {
+.featuresindex .fi-middleright {
   display: flex;
   flex-direction: column;
   background-image: url(../img/card3.jpg);
@@ -292,12 +311,11 @@ h5 {
   background-position: center;
   padding: 20px;
   padding-bottom: 40px;
-  min-height: 90vh;
+  min-height: 35vh;
   justify-content: end;
   align-items: start;
 }
-
-.fi-right {
+.featuresindex .fi-right {
   display: flex;
   flex-direction: column;
   background-image: url(../img/card4.jpg);
@@ -305,24 +323,21 @@ h5 {
   background-position: center;
   padding: 20px;
   padding-bottom: 40px;
-  min-height: 90vh;
+  min-height: 35vh;
   justify-content: end;
   align-items: start;
 }
-
-.icon-link {
+.featuresindex .icon-link {
   display: flex;
   color: white;
   align-content: center;
 }
-
-.linkdiv {
+.featuresindex .linkdiv {
   color: white;
   text-decoration: none;
   align-content: center;
 }
-
-.bi-arrow-right-circle-fill {
+.featuresindex .bi-arrow-right-circle-fill {
   display: flex;
   color: white;
   font-size: 25px;
@@ -340,8 +355,7 @@ h5 {
   background-color: #15d4c4;
   align-items: center;
 }
-
-.testimonios-index {
+.testimonial-index .testimonios-index {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -354,7 +368,23 @@ h5 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: space-evenly;
-  max-height: 100vh;
+  /*max-height: 100vh;*/
+  padding-bottom: 1rem;
+}
+.features .icon-link {
+  display: flex;
+  color: white;
+  align-content: center;
+}
+.features .linkdiv {
+  color: white;
+  text-decoration: none;
+  align-content: center;
+}
+.features .bi-arrow-right-circle-fill {
+  display: flex;
+  color: white;
+  font-size: 25px;
 }
 
 .features__boton--icono {
@@ -743,7 +773,7 @@ h5 {
 }
 
 .carousel {
-  min-height: 80vh;
+  min-height: 50vh;
 }
 
 footer {
@@ -774,6 +804,18 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .h1paginas {
+    color: white;
+    font-family: "Source Serif Pro", serif;
+    font-size: 42pt;
+    font-weight: 600;
+    line-height: 95%;
+    text-align: left;
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+  }
   .container-nav {
     position: relative;
     padding: 10px 12px;
@@ -926,6 +968,8 @@ footer {
     padding-left: 0;
   }
   .planestudios {
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
   }
   .features {
@@ -1060,7 +1104,7 @@ footer {
   }
   .doscolumnas {
     display: flex;
-    flex-direction: colum;
+    flex-direction: column;
   }
   .call-to-action {
     display: grid;
@@ -1090,7 +1134,7 @@ footer {
   .h2-oferta__azul {
     color: #1A1B38;
     padding-left: 0;
-    padding: 1rem;
+    padding: 0rem;
   }
   .team {
     display: flex;
@@ -1103,7 +1147,6 @@ footer {
   footer {
     background-color: #F6F6F6;
     padding: 1rem;
-    max-height: 100vh;
   }
 }
 
