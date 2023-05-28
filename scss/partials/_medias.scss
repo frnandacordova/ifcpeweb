@@ -52,6 +52,40 @@
     display: none;
     color: white;
 }
+/*CONOCENOS*/
+
+.texto-imagen {
+    /*display: flex;
+    flex-direction: row;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr;
+    grid-area: "cta-img" "cta-text";
+    justify-content: space-between;
+    max-height: 100vh;
+    min-height: 100vh;
+}
+
+.cta-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    min-width: 100vh;
+    justify-content: left;
+}
+
+
+.cta-img__hover {
+    background-image: url(../img/before2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
 
     .checkbox:checked ~ .bi-list {
         display: none;
@@ -85,7 +119,7 @@
 
     h3 {
         color: white;
-        font-size: 30pt;
+        font-size: 25pt;
         font-weight: 600;
         font-family: 'Source Serif Pro', serif;
         line-height: 95%;
@@ -170,6 +204,13 @@
         text-align: left;
     }
 
+    .parrafo-subheader__azul {
+        color: #1A1B38;
+        text-align: left;
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+
     .h2-index {
         font-size: 42pt;
     }
@@ -194,6 +235,13 @@
     }
 
     .planestudios {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        
+    }
+
+    .cta-text__conocenos {
         display: flex;
         flex-direction: column;
         padding: 1rem;
@@ -410,7 +458,6 @@
         padding-top: 5%;
         padding-bottom: 5%;
         
-        width: 480px;
         justify-content: center;
     }
 

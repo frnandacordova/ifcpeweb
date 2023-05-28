@@ -49,11 +49,13 @@
 }
 
 .texto-imagen {
+    /*display: flex;
+    flex-direction: row;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:  1fr 1fr;
+    grid-template-rows:  1fr;
     grid-area: "cta-img" "cta-text";
-    justify-content: space-evenly;
+    justify-content: space-between;
     max-height: 100vh;
     min-height: 100vh;
 }
@@ -74,6 +76,14 @@
     padding-right: 25%;
     padding-bottom: 1rem;
     text-align: center
+}
+
+.parrafo-subheader__azul {
+    color: #1A1B38;
+    text-align: left;
+    padding-left: 0%;
+    padding-right: 0%;
+
 }
 
 .featuresindex {
@@ -270,6 +280,21 @@
     background-image: url(../img/card1.jpg);
     background-size: cover;
     background-position: center;
+
+    
+}
+
+.linkdiv {
+    color: white;
+    text-decoration: none;
+    align-content: center;
+
+}
+
+.bi-arrow-right-circle-fill {
+    display: flex;
+    color: white;
+    font-size: 25px;
 }
 
 .sub-hero {
@@ -320,6 +345,11 @@ padding-left: 0;
     max-height: 80vh;
     border-radius: 20px;
     padding: 2rem;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    
 
 }
 
@@ -328,6 +358,7 @@ padding-left: 0;
     flex-direction: column;
     justify-content: center;
 }
+
 
 .nav-categories {
     display: flex;
@@ -580,20 +611,29 @@ padding-left: 0;
     justify-content: center;
 }
 
+.cta-text__conocenos {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: center;
+    
+}
+
 
 .cta-img {
-    display: flex;
+    /*display: flex;*/
     background-image: url(../img/portadaOferta.jpg);
 
 }
 
 .cta-img__hover {
-    background-image: url(../img/actual.jpeg);
+    background-image: url(../img/actual2.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .cta-img__hover:hover {
-    background-image: url(../img/before.jpeg);
+    background-image: url(../img/before2.png);
 }
 
 .cta-link {
@@ -622,6 +662,19 @@ padding-left: 0;
 
 .carousel {
     min-height: 50vh;
+
+}
+
+.video-container {
+    min-width: 100vh;
+    height: auto;
+    object-fit: cover;
+    
+
+  }
+
+.vidloop {
+    width: 100%;
 
 }
 
